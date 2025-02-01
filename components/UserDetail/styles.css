@@ -1,0 +1,40 @@
+.user-detail-card {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.user-detail-card h5 {
+  font-weight: bold;
+}
+
+.user-detail-card .MuiTypography-body1 {
+  margin-top: 10px;
+  font-size: 16px; /* Adjust font size for better readability */
+}
+
+.user-detail-card .MuiTypography-body2 {
+  margin-top: 4px;
+  color: #555; /* Subtle color for occupation */
+}
+
+.view-photos-button {
+  margin-top: 20px; /* Space above the button */
+}
+
+.mention-photo-card {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff; /* Light background for contrast */
+}
+
+.commenter-link {
+  text-decoration: none;
+  color: inherit;
+}

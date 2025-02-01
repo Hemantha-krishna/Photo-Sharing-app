@@ -1,0 +1,35 @@
+/* Styling for the whole container */
+.user-list-container {
+    padding: 10px;
+    background-color: #fafafa;
+    height: calc(100vh - 64px);
+    overflow-y: auto;
+    /* overflow-y: hidden; */
+  }
+  
+  .user-list-header {
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Styling the cards */
+  .user-card {
+    margin: 8px 0;
+    padding: 6px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+  
+  /* Hover effect on cards */
+  .user-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .MuiDivider-root {
+    margin: 0 16px;
+  }
+  

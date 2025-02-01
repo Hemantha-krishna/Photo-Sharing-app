@@ -1,0 +1,122 @@
+.user-photos-container {
+  padding: 20px;
+  max-width: 1200px; /* Set a max width to center the content */
+  margin: 0 auto; /* Center the container */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.photo-card {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s;
+  overflow: hidden; /* Hide overflow of any content */
+}
+
+.photo-card img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.photo-card:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.comment {
+  margin-top: 10px;
+  padding: 5px 0;
+  border-top: 1px solid #ddd; /* Divider between comments */
+}
+
+.comment:last-child {
+  border-bottom: none; /* Remove border for last comment */
+}
+
+.comment-date {
+  margin-top: 5px; /* Space above the comment date */
+}
+
+/* Ensure grid items do not exceed available height */
+.main-grid-item {
+  overflow-y: auto; /* Allow scrolling if content exceeds height */
+}
+
+/* Styling for the new comment input section */
+.add-comment {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #f9f9f9; /* Light background */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.add-comment .mentions-input {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.add-comment .mentions-input:focus {
+  border-color: #007BFF; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle blue shadow */
+}
+
+.add-comment .MuiButton-root {
+  align-self: flex-end; /* Align the button to the end of the form */
+  background-color: #007BFF; /* Primary button color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Add padding for better click area */
+  border-radius: 4px; /* Rounded button */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.add-comment .MuiButton-root:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.commenter-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.like-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.MuiIconButton-root {
+  padding: 8px; /* Adjust padding to desired size */
+}
+
+.mentions-input {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Style for @mentions */
+.mention {
+  background-color: #daf4fa;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.mentions-textbox {
+  height: 50px; /* Set desired height for the textbox */
+  width: 100%;
+  min-height: 48px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
